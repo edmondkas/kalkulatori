@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.108.0" />
+    <title>Qeramika</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/pricing/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      a{
+        text-decoration: none;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .hide{
+  display:none
+}
+     
+ 
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="container py-4">
+      <header>
+        <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+          <img src="logo.png" class="img-fluid" alt="logo">
+          <p class="fs-5 text-muted">
+            Llogarite hapsirën për m², sasitë e qeramikave dhe çmimin
+
+          </p>
+          
+          <div class="col-md-8 offset-md-2">
+            <a href="index.html">
+            <input class="btn btn-primary" type="button"  value="Kthehu në ballinë"/>                   
+
+</a>
+        </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="card mb-5 rounded-3 shadow-lg">
+          <div class="card-body">
+
+        <div class="row mb-3">
+          <label for="gjatesia_qeramikes" class="col-sm-2 col-form-label">Gjatësia Qeramikes</label>
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" id="gjatesia_qeramikes">
+            <span class="input-group-text">cm</span></div>
+
+          </div>
+          </div>
+          <div class="row mb-3">
+            <label for="gjeresia_qeramikes" class="col-sm-2 col-form-label">Gjerësia Qeramikes</label>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+              <input type="text" class="form-control" id="gjeresia_qeramikes" >
+              <span class="input-group-text">cm</span></div>
+  
+            </div>
+            </div>
+            
+        <div class="row mb-3">
+            <label for="gjatesia_hapsires" class="col-sm-2 col-form-label">Gjatësia Hapsirës</label>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="gjatesia_hapsires" >
+                <span class="input-group-text">m</span></div>
+              </div>
+              
+              
+          </div>
+          
+        <div class="row mb-3">
+            <label for="gjeresia_hapsires" class="col-sm-2 col-form-label">Gjerësia Hapsirës</label>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="gjeresia_hapsires" >
+                <span class="input-group-text">m</span></div>
+              </div>
+              
+              
+          </div>   
+          
+        <div class="row mb-3">
+            <label for="humbja" class="col-sm-2 col-form-label">Humbja</label>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="humbja" value="5">
+                <span class="input-group-text">%</span></div>
+              </div>
+              
+              
+          </div>
+          
+        <div class="row mb-3">
+            <label for="qmimi_qeramike" class="col-sm-2 col-form-label">Çmimi për Qeramike</label>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="qmimi_qeramike" >
+                <span class="input-group-text">Euro</span></div>
+              </div>
+              
+              
+          </div>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:blue">Hapsira</label>
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                <input type="text" class="form-control" id="Hapsira"  disabled readonly>
+                <span class="input-group-text">m²</span></div>
+    
+              </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:blue">Numri Qeramikave</label>
+                <div class="col-sm-6">
+                  <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="numri_qeramikave" disabled readonly>
+                  <span class="input-group-text">Cope</span></div>
+      
+                </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:blue">Numri Qeramikave në Tërsi</label>
+                    <div class="col-sm-6">
+                      <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="numri_qeramike_tersi" disabled readonly>
+                      <span class="input-group-text">Cope</span></div>
+          
+                    </div>
+                    </div><div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:blue">Kostoja</label>
+                        <div class="col-sm-6">
+                          <div class="input-group mb-3">
+                          <input type="text" class="form-control" id="kostoja" disabled readonly>
+                          <span class="input-group-text">Euro</span></div>
+              
+                          
+                        </div>
+                        
+                        </div>
+                        <div class="alert alert-danger hide"  id="alertId" role="alert"  >
+                            
+                        </div>
+                          
+                  
+                          
+                
+                  <div class="col-md-2 offset-md-2">
+                      <input class="btn btn-primary" type="button" onclick="qeramike()" value="Llogarite"/>                   
+        
+        
+                  </div>
+                  <div class="col-md-2 offset-md-10">
+                    <input class="btn btn-danger" type="button" onclick="myDel()" value="Fshije"/>                   
+      
+      
+                </div>
+                
+                  </div>
+                  
+
+
+
+        </div>
+        
+      
+        </div>
+      <script>
+
+
+        function qeramike(){
+            
+
+          let  a, b, c, d, f, x, y, z, h, s, q, k;
+
+          a=parseFloat(document.getElementById("gjatesia_qeramikes").value);
+         
+          b=parseFloat(document.getElementById("gjeresia_qeramikes").value);
+          c=parseFloat(document.getElementById("gjatesia_hapsires").value);
+          d=parseFloat(document.getElementById("gjeresia_hapsires").value);
+          f=parseFloat(document.getElementById("humbja").value);
+          q=parseFloat(document.getElementById("qmimi_qeramike").value);
+ 
+          if(!a || !b || !c || !d || !f || !q ){
+            document.getElementById('alertId').classList.remove('hide')
+                document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
+          }
+          else{
+            document.getElementById('alertId').classList.add('hide')
+
+          x=(a/100) *(b/100);//metra katrore
+
+          y=c*d; // hapsira
+
+          y=Math.round(y * 100) / 100;
+            
+          z=y/x;
+
+          z=Math.round(z);
+            
+          h=(f/100)*z;
+
+          s=z+h;
+
+          s=Math.round(s);
+
+
+            k=s*q;
+            k=Math.round(k * 100) / 100
+
+            document.getElementById("Hapsira").value=y;
+          document.getElementById("numri_qeramikave").value=z;
+          document.getElementById("numri_qeramike_tersi").value=s;
+          document.getElementById("kostoja").value=k;
+          }
+        }
+
+
+        function myDel(){
+  document.getElementById("gjatesia_qeramikes").value = "";
+  document.getElementById("gjeresia_qeramikes").value = "";
+  document.getElementById("gjatesia_hapsires").value = "";
+  document.getElementById("gjeresia_hapsires").value = "";
+
+  document.getElementById("humbja").value = "";
+  document.getElementById("qmimi_qeramike").value = "";
+
+
+}
+
+
+ 
+      </script>
+
+       
+          
+        
+            
+            
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+         
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.108.0" />
+    <title>Rryma Elektrike</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/pricing/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      a{
+        text-decoration: none;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .hide{
+  display:none
+}
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="container py-4">
+      <header>
+        <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+          <img src="logo.png" class="img-fluid" alt="logo">
+          <p class="fs-5 text-muted">
+            Llogarite shpenzimet e rrymës elektrike
+          </p>
+          <div class="col-md-8 offset-md-2">
+            <a href="index.html">
+            <input class="btn btn-primary" type="button"  value="Kthehu në ballinë"/>                   
+
+</a>
+        </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="card mb-5 rounded-3 shadow-lg">
+          <div class="card-body">
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                              <label for="tarifa_lart_" class="form-label">Tarifa Lart(A1)</label>
+                                              <div class="input-group mb-3">
+
+                                              <input type="text" class="form-control" id="tarifa_lart_">
+                                              <span class="input-group-text">kWh</span></div>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                              <label for="tarifa_ulte_" class="form-label">Tarifa Ulët(A2)</label>
+                                              <div class="input-group mb-3">
+
+                                                <input type="text" class="form-control" id="tarifa_ulte_">
+                                                <span class="input-group-text">kWh</span></div>                                            </div>
+                                            <div class="col-3">
+                                              <label for="tarifa_lart_kwh_1" class="form-label" style="color:blue">kWh<=800 Tarifa Lart(A1)</label>
+                                              <div class="input-group mb-3">
+
+                                                <input type="text" class="form-control" id="tarifa_lart_kwh_1" disabled readonly>
+                                                <span class="input-group-text">kWh</span></div>                                              
+                                            </div>
+                                            <div class="col-3">
+                                                <label for="tarifa_lart_euro_1" class="form-label" style="color:blue">Euro<=800 Tarifa Lart(A1)</label>
+                                                <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_lart_euro_1" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>                                             </div>
+                                            <div class="col-3">
+                                                <label for="tarifa_ulte_kwh_1" class="form-label" style="color:blue">kWh<=800 Tarifa Ulët(A2)</label>
+                                                <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_ulte_kwh_1" disabled readonly>
+                                                    <span class="input-group-text">kWh</span></div>                                             </div>
+                                            <div class="col-3">
+                                                <label for="inputAddress" class="form-label" style="color:blue">Euro<=800 Tarifa Ulët(A2)</label>
+                                                <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_ulte_euro_1" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>                                             </div>
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label" style="color:blue">Totali kWh (kWh<=800)</label>
+                                                <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="totali_kwh_1" disabled readonly>
+                                                    <span class="input-group-text">kWh</span></div>                                               </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label" style="color:blue">Totali Euro (kwh<=800)</label>
+                                                <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="totali_euro" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>                                               </div>
+                                              <div class="col-3">
+                                                <label for="inputAddress" class="form-label" style="color:blue">kWh>800 Tarifa Lart(A1)</label>
+                                                <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_lart_kwh_2" disabled readonly>
+                                                    <span class="input-group-text">kWh</span></div>                                               </div>
+                                              <div class="col-3">
+                                                  <label for="inputAddress" class="form-label" style="color:blue">Euro>800 Tarifa Larte(A1)</label>
+                                                  <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_lart_euro_2" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>                                                 </div>
+                                                <div class="col-3">
+                                                  <label for="inputAddress" class="form-label" style="color:blue">kWh>800 Tarifa Ulët(A2)</label>
+                                                  <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_ulte_kwh_2" disabled readonly>
+                                                    <span class="input-group-text">kWh</span></div>                                                 </div>
+                                                <div class="col-3">
+                                                  <label for="inputAddress" class="form-label" style="color:blue">Euro>800 Tarifa Ulët(A2)</label>
+                                                  <div class="input-group mb-3">
+
+                                                    <input type="text" class="form-control" id="tarifa_ulte_euro_2" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>                                                 </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Totali kWh (kWh>800)</label>
+                                                    <div class="input-group mb-3">
+
+                                                        <input type="text" class="form-control" id="totali_kwh_2" disabled readonly>
+                                                        <span class="input-group-text">kWh</span></div>                                                   </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label" style="color:blue">Totali Euro (kwh>800)</label>
+                                                    <div class="input-group mb-3">
+
+                                                        <input type="text" class="form-control" id="totali_euro_2" disabled readonly>
+                                                        <span class="input-group-text">Euro</span></div>                                                   </div>
+                                                  <div class="col-md-4">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Totali kWh Tarifa Lart (A1) gjithsej</label>
+                                                    <div class="input-group mb-3">
+
+                                                        <input type="text" class="form-control" id="totali_gjithsej_lart_kwh" disabled readonly>
+                                                        <span class="input-group-text">kWh</span></div>                                                   </div>
+                                                  <div class="col-md-4">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Totali kWh Tarifa Ulët (A2) gjithsej</label>
+                                                    <div class="input-group mb-3">
+
+                                                        <input type="text" class="form-control" id="totali_gjithsej_ulte_kwh" disabled readonly>
+                                                        <span class="input-group-text">kWh</span></div>                                                   </div>
+                                                  <div class="col-md-4">
+                                                    <label for="inputPassword4" class="form-label" style="color:blue">Totali kWh gjithsej</label>
+                                                    <div class="input-group mb-3">
+
+                                                        <input type="text" class="form-control" id="totali_gjithsej_kwh" disabled readonly>
+                                                        <span class="input-group-text">kWh</span></div>                                                   </div>
+                                                  <div class="col-md-3">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Tarifa Fikse</label>
+                                                    <div class="input-group mb-3">
+      
+                                                    <input type="text" class="form-control" id="tarifa_fikse" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>
+      
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Tarifa Energjisë</label>
+                                                    <div class="input-group mb-3">
+      
+                                                    <input type="text" class="form-control" id="tarifa_energjise" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>
+      
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Neto</label>
+                                                    <div class="input-group mb-3">
+      
+                                                    <input type="text" class="form-control" id="neto" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>
+      
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">TVSH (8%)</label>
+                                                    <div class="input-group mb-3">
+      
+                                                    <input type="text" class="form-control" id="tvsh" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>
+      
+                                                  </div>
+                                                  <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label" style="color:blue">Shuma Fakturës</label>
+                                                    <div class="input-group mb-3">
+      
+                                                    <input type="text" class="form-control" id="shuma_faktures" disabled readonly>
+                                                    <span class="input-group-text">Euro</span></div>
+      
+                                                  </div>
+                                           
+                                                  <div class="alert alert-danger hide"  id="alertId" role="alert"  >
+                            
+                                                  </div>
+                                                  
+                                                    <div class="col-md-6 offset-md-2">
+                                                        <input class="btn btn-primary" type="button" onclick="rryma()" value="Llogarite"/>                   
+                                          
+                                          
+                                                    </div>
+                                                    <div class="col-md-2 offset-md-10">
+                                                      <input class="btn btn-danger" type="button" onclick="myDel()" value="Fshije"/>                   
+                                        
+                                        
+                                                  </div>
+                                                  <script>
+
+
+                                                    function rryma(){
+                                            
+                                                      let tarifa_lart, tarifa_ult, totali, t_lart, t_ulte, g,h,i, j, k, l,m,n,o,p,q,s,t_energjis,neto,t_fikse,tvsh,shuma_fakture,t_gjithsej_lart,t_gjithsej_ulte,gjithsej_kwh;
+                                            
+                                                      tarifa_lart=parseFloat(document.getElementById("tarifa_lart_").value);
+                                                      
+                                                      tarifa_ult=parseFloat(document.getElementById("tarifa_ulte_").value);
+                                                      
+                                                      if(!tarifa_lart || !tarifa_ult){
+                                                        document.getElementById('alertId').classList.remove('hide')
+                                                            document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
+                                                      
+                                                      }
+                                                      else{
+                                                        document.getElementById('alertId').classList.add('hide')
+                                            
+                                            
+                                                        totali=tarifa_lart+tarifa_ult;
+                                                        
+                                                        if(totali>800){
+                                            t_lart=tarifa_lart/totali;
+                                                         t_ulte=1-t_lart;
+                                                            g=800*t_lart;
+                                                            g=Math.round(g*100)/100;
+
+                                                            h=800-g;
+                                                            h=Math.round(h*100)/100;
+
+                                                            i=g+h;
+                                                            j=g*0.0675;
+                                                            j=Math.round(j * 100) / 100;
+                                                            k=h*0.0289;
+                                                            k=Math.round(k * 100) / 100;
+
+                                                            l=j+k;
+                                                            m=(totali-800)*t_lart;
+                                                            m=Math.round(m*100)/100;
+                                                            n=(totali-800)*t_ulte;
+                                                            n=Math.round(n*100)/100;
+                                                            q=m+n;
+                                                            o=m*0.1252;
+                                                            o=Math.round(o*100)/100;
+                                                            p=n*0.0590;
+                                                            p=Math.round(p*100)/100;
+                                                            s=o+p;
+
+                                            
+                                                            t_gjithsej_lart=g+m;
+                                                            t_gjithsej_ulte=h+n;
+                                                            t_energjis=l+s;
+                                                            t_energjis=Math.round(t_energjis*100)/100;
+
+                                                            gjithsej_kwh=t_gjithsej_lart+t_gjithsej_ulte;
+                                                            t_fikse=1.74;
+                                                            neto=t_energjis+t_fikse;
+                                                            neto=Math.round(neto*100)/100;
+
+                                                            tvsh=neto*0.08;
+                                                            tvsh=Math.round(tvsh*100)/100;
+                                                            shuma_fakture=neto+tvsh;
+                                                            shuma_fakture=Math.round(shuma_fakture*100)/100;
+
+                                                            
+                                            
+                                                        }
+                                                        else{
+
+                                                            
+                                                            g=tarifa_lart;
+                                                            g=Math.round(g*100)/100;
+
+                                                            h=tarifa_ult;
+                                                            h=Math.round(h*100)/100;
+
+                                                            i=g+h;
+                                                            j=g*0.0675;
+                                                            j=Math.round(j * 100) / 100;
+                                                            k=h*0.0289;
+                                                            k=Math.round(k * 100) / 100;
+
+                                                            l=j+k;
+                                                            m="/////////";
+                                                            n="/////////";
+                                                            q="/////////";
+                                                            o="/////////";
+                                                            p="/////////";
+                                                            s=o+p;
+                                                           
+                                                        
+
+                                            
+                                                            t_gjithsej_lart=g;
+                                                            t_gjithsej_ulte=h;
+                                                            t_energjis=l;
+                                                            t_energjis=Math.round(t_energjis*100)/100;
+
+                                                            gjithsej_kwh=t_gjithsej_lart+t_gjithsej_ulte;
+                                                            t_fikse=1.74;
+                                                            neto=t_energjis+t_fikse;
+                                                            neto=Math.round(neto*100)/100;
+
+                                                            tvsh=neto*0.08;
+                                                            tvsh=Math.round(tvsh*100)/100;
+                                                            shuma_fakture=neto+tvsh;
+                                                            shuma_fakture=Math.round(shuma_fakture*100)/100;
+
+
+
+                                                        }
+                                                    
+                                                        document.getElementById("tarifa_lart_kwh_1").value=g;
+                                                            document.getElementById("tarifa_lart_euro_1").value=j;
+                                                            document.getElementById("tarifa_ulte_kwh_1").value=h;
+                                                            document.getElementById("tarifa_ulte_euro_1").value=k;
+                                                      document.getElementById("totali_kwh_1").value=i;
+                                                      document.getElementById("totali_euro").value=l;
+                                                      document.getElementById("tarifa_lart_kwh_2").value=m;
+                                                      document.getElementById("tarifa_lart_euro_2").value=o;
+                                                      document.getElementById("tarifa_ulte_kwh_2").value=n;
+                                                      document.getElementById("tarifa_ulte_euro_2").value=p;
+                                                      document.getElementById("totali_kwh_2").value=q;
+                                                      document.getElementById("totali_euro_2").value=s;
+                                                      document.getElementById("totali_gjithsej_lart_kwh").value=t_gjithsej_lart;
+                                                      document.getElementById("totali_gjithsej_ulte_kwh").value=t_gjithsej_ulte;
+                                                      document.getElementById("totali_gjithsej_kwh").value=gjithsej_kwh;
+                                                      document.getElementById("tarifa_fikse").value=t_fikse;
+                                                      document.getElementById("tarifa_energjise").value=t_energjis;
+                                                      document.getElementById("neto").value=neto;
+                                                      document.getElementById("tvsh").value=tvsh;
+                                                      document.getElementById("shuma_faktures").value=shuma_fakture;
+                                            
+                                            
+                                                  
+                                                      }
+                                                    }
+                                            
+                                            
+                                                    function myDel(){
+                                              document.getElementById("tarifa_lart_").value = "";
+                                              document.getElementById("tarifa_ulte_").value = "";
+                                            
+                                            }
+                                            
+                                            
+                                             
+                                                  </script>
+                                            
+                                     
+                                                                                       
+                                          </form>
+              
+                
+                  </div>
+                  
+
+
+
+        </div>
+        
+      
+        </div>
+      
+
+       
+          
+        
+            
+            
+    </div>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+         
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
+      </footer>
+    </div>
+  </body>
+</html>
+

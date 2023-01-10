@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.108.0" />
+    <title>Karburanti</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/pricing/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      a{
+        text-decoration: none;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .hide{
+  display:none
+}
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="container py-4">
+      <header>
+        <div class="pricing-header p-5 pb-md-4 mx-auto text-center">
+          <img src="logo.png" class="img-fluid" alt="logo">
+          <p class="fs-5 text-muted">
+            Llogarit shpenzimet dhe mesataren për km/h
+          </p>
+          <div class="col-md-8 offset-md-2">
+            <a href="index.html">
+            <input class="btn btn-primary" type="button"  value="Kthehu në ballinë"/>                   
+
+</a>
+        </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="card mb-5 rounded-3 shadow-lg">
+          <div class="card-body">
+
+        <div class="row mb-3">
+          <label for="distanca" class="col-sm-2 col-form-label">Distanca</label>
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="distanca">
+              <span class="input-group-text">Km</span></div>
+            </div>
+            
+            
+        </div>
+        <div class="row mb-3">
+          <label for="karburanti" class="col-sm-2 col-form-label">Karburanti</label>
+          <div class="col-sm-6">
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" id="karburanti">
+            <span class="input-group-text">Litra</span></div>
+
+          </div>
+          </div>
+          <div class="row mb-3">
+            <label for="cmimikarburantit" class="col-sm-2 col-form-label">Çmimi Karburantit</label>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+              <input type="text" class="form-control" id="cmimikarburantit">
+              <span class="input-group-text">Euro/L</span></div>
+  
+            </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:blue">Konsumi Karburantit</label>
+              <div class="col-sm-6">
+                <div class="input-group mb-3">
+                <input type="text" class="form-control" id="konsumikarburantit"  disabled readonly>
+                <span class="input-group-text">L/100km</span></div>
+    
+              </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:blue">Kostoja totale</label>
+                <div class="col-sm-6">
+                  <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="kostojakarburantit" disabled readonly>
+                  <span class="input-group-text">Euro</span></div>
+      
+                </div>
+                </div>
+                <div class="alert alert-danger hide"  id="alertId" role="alert"  >
+                            
+                </div>
+                
+                  <div class="col-md-2 offset-md-2">
+                      <input class="btn btn-primary" type="button" onclick="karburanti()" value="Llogarite"/>                   
+        
+        
+                  </div>
+                  <div class="col-md-2 offset-md-10">
+                    <input class="btn btn-danger" type="button" onclick="myDel()" value="Fshije"/>                   
+      
+      
+                </div>
+                
+                  </div>
+                  
+
+
+
+        </div>
+        
+      
+        </div>
+      <script>
+
+
+        function karburanti(){
+
+          let a, b, c, d, f, x;
+
+          a=parseFloat(document.getElementById("distanca").value);
+          
+          b=parseFloat(document.getElementById("karburanti").value);
+          d=parseFloat(document.getElementById("cmimikarburantit").value);  
+          
+          if(!a || !b || !d){
+            document.getElementById('alertId').classList.remove('hide')
+                document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
+          
+          }
+          else{
+            document.getElementById('alertId').classList.add('hide')
+
+            x=a/ 100;
+
+          c=b/ x;
+          c=Math.round(c * 100) / 100;
+
+
+          f=d*b;
+          f=Math.round(f * 100) / 100;
+
+document.getElementById("konsumikarburantit").value=c;
+          document.getElementById("kostojakarburantit").value=f;
+          }
+        }
+
+
+        function myDel(){
+  document.getElementById("distanca").value = "";
+  document.getElementById("karburanti").value = "";
+  document.getElementById("cmimikarburantit").value = "";
+
+}
+
+
+ 
+      </script>
+
+       
+          
+        
+            
+            
+    </div>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+         
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
+      </footer>
+    </div>
+  </body>
+</html>
