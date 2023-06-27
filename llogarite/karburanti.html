@@ -182,51 +182,7 @@
         
       
         </div>
-      <script>
 
-
-        function karburanti(){
-
-          let a, b, c, d, f, x;
-
-          a=parseFloat(document.getElementById("distanca").value);
-          
-          b=parseFloat(document.getElementById("karburanti").value);
-          d=parseFloat(document.getElementById("cmimikarburantit").value);  
-          
-          if(!a || !b || !d){
-            document.getElementById('alertId').classList.remove('hide')
-                document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
-          
-          }
-          else{
-            document.getElementById('alertId').classList.add('hide')
-
-            x=a/ 100;
-
-          c=b/ x;
-          c=Math.round(c * 100) / 100;
-
-
-          f=d*b;
-          f=Math.round(f * 100) / 100;
-
-document.getElementById("konsumikarburantit").value=c;
-          document.getElementById("kostojakarburantit").value=f;
-          }
-        }
-
-
-        function myDel(){
-  document.getElementById("distanca").value = "";
-  document.getElementById("karburanti").value = "";
-  document.getElementById("cmimikarburantit").value = "";
-
-}
-
-
- 
-      </script>
 
        
           
@@ -242,5 +198,7 @@ document.getElementById("konsumikarburantit").value=c;
         <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
       </footer>
     </div>
+        <script src="script.js"></script>
+
   </body>
 </html>
