@@ -242,72 +242,6 @@
         
       
         </div>
-      <script>
-
-
-        function qeramike(){
-            
-
-          let  a, b, c, d, f, x, y, z, h, s, q, k;
-
-          a=parseFloat(document.getElementById("gjatesia_qeramikes").value);
-         
-          b=parseFloat(document.getElementById("gjeresia_qeramikes").value);
-          c=parseFloat(document.getElementById("gjatesia_hapsires").value);
-          d=parseFloat(document.getElementById("gjeresia_hapsires").value);
-          f=parseFloat(document.getElementById("humbja").value);
-          q=parseFloat(document.getElementById("qmimi_qeramike").value);
- 
-          if(!a || !b || !c || !d || !f || !q ){
-            document.getElementById('alertId').classList.remove('hide')
-                document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
-          }
-          else{
-            document.getElementById('alertId').classList.add('hide')
-
-          x=(a/100) *(b/100);//metra katrore
-
-          y=c*d; // hapsira
-
-          y=Math.round(y * 100) / 100;
-            
-          z=y/x;
-
-          z=Math.round(z);
-            
-          h=(f/100)*z;
-
-          s=z+h;
-
-          s=Math.round(s);
-
-
-            k=s*q;
-            k=Math.round(k * 100) / 100
-
-            document.getElementById("Hapsira").value=y;
-          document.getElementById("numri_qeramikave").value=z;
-          document.getElementById("numri_qeramike_tersi").value=s;
-          document.getElementById("kostoja").value=k;
-          }
-        }
-
-
-        function myDel(){
-  document.getElementById("gjatesia_qeramikes").value = "";
-  document.getElementById("gjeresia_qeramikes").value = "";
-  document.getElementById("gjatesia_hapsires").value = "";
-  document.getElementById("gjeresia_hapsires").value = "";
-
-  document.getElementById("humbja").value = "";
-  document.getElementById("qmimi_qeramike").value = "";
-
-
-}
-
-
- 
-      </script>
 
        
           
@@ -324,5 +258,7 @@
         <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
       </footer>
     </div>
+        <script src="script.js"></script>
+
   </body>
 </html>
