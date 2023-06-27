@@ -272,156 +272,7 @@
                                         
                                         
                                                   </div>
-                                                  <script>
-
-
-                                                    function rryma(){
-                                            
-                                                      let tarifa_lart, tarifa_ult, totali, t_lart, t_ulte, g,h,i, j, k, l,m,n,o,p,q,s,t_energjis,neto,t_fikse,tvsh,shuma_fakture,t_gjithsej_lart,t_gjithsej_ulte,gjithsej_kwh;
-                                            
-                                                      tarifa_lart=parseFloat(document.getElementById("tarifa_lart_").value);
-                                                      
-                                                      tarifa_ult=parseFloat(document.getElementById("tarifa_ulte_").value);
-                                                      
-                                                      if(!tarifa_lart || !tarifa_ult){
-                                                        document.getElementById('alertId').classList.remove('hide')
-                                                            document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
-                                                      
-                                                      }
-                                                      else{
-                                                        document.getElementById('alertId').classList.add('hide')
-                                            
-                                            
-                                                        totali=tarifa_lart+tarifa_ult;
-                                                        
-                                                        if(totali>800){
-                                            t_lart=tarifa_lart/totali;
-                                                         t_ulte=1-t_lart;
-                                                            g=800*t_lart;
-                                                            g=Math.round(g*100)/100;
-
-                                                            h=800-g;
-                                                            h=Math.round(h*100)/100;
-
-                                                            i=g+h;
-                                                            j=g*0.0675;
-                                                            j=Math.round(j * 100) / 100;
-                                                            k=h*0.0289;
-                                                            k=Math.round(k * 100) / 100;
-
-                                                            l=j+k;
-                                                            m=(totali-800)*t_lart;
-                                                            m=Math.round(m*100)/100;
-                                                            n=(totali-800)*t_ulte;
-                                                            n=Math.round(n*100)/100;
-                                                            q=m+n;
-                                                            o=m*0.1252;
-                                                            o=Math.round(o*100)/100;
-                                                            p=n*0.0590;
-                                                            p=Math.round(p*100)/100;
-                                                            s=o+p;
-
-                                            
-                                                            t_gjithsej_lart=g+m;
-                                                            t_gjithsej_ulte=h+n;
-                                                            t_energjis=l+s;
-                                                            t_energjis=Math.round(t_energjis*100)/100;
-
-                                                            gjithsej_kwh=t_gjithsej_lart+t_gjithsej_ulte;
-                                                            t_fikse=1.74;
-                                                            neto=t_energjis+t_fikse;
-                                                            neto=Math.round(neto*100)/100;
-
-                                                            tvsh=neto*0.08;
-                                                            tvsh=Math.round(tvsh*100)/100;
-                                                            shuma_fakture=neto+tvsh;
-                                                            shuma_fakture=Math.round(shuma_fakture*100)/100;
-
-                                                            
-                                            
-                                                        }
-                                                        else{
-
-                                                            
-                                                            g=tarifa_lart;
-                                                            g=Math.round(g*100)/100;
-
-                                                            h=tarifa_ult;
-                                                            h=Math.round(h*100)/100;
-
-                                                            i=g+h;
-                                                            j=g*0.0675;
-                                                            j=Math.round(j * 100) / 100;
-                                                            k=h*0.0289;
-                                                            k=Math.round(k * 100) / 100;
-
-                                                            l=j+k;
-                                                            m="/////////";
-                                                            n="/////////";
-                                                            q="/////////";
-                                                            o="/////////";
-                                                            p="/////////";
-                                                            s=o+p;
-                                                           
-                                                        
-
-                                            
-                                                            t_gjithsej_lart=g;
-                                                            t_gjithsej_ulte=h;
-                                                            t_energjis=l;
-                                                            t_energjis=Math.round(t_energjis*100)/100;
-
-                                                            gjithsej_kwh=t_gjithsej_lart+t_gjithsej_ulte;
-                                                            t_fikse=1.74;
-                                                            neto=t_energjis+t_fikse;
-                                                            neto=Math.round(neto*100)/100;
-
-                                                            tvsh=neto*0.08;
-                                                            tvsh=Math.round(tvsh*100)/100;
-                                                            shuma_fakture=neto+tvsh;
-                                                            shuma_fakture=Math.round(shuma_fakture*100)/100;
-
-
-
-                                                        }
-                                                    
-                                                        document.getElementById("tarifa_lart_kwh_1").value=g;
-                                                            document.getElementById("tarifa_lart_euro_1").value=j;
-                                                            document.getElementById("tarifa_ulte_kwh_1").value=h;
-                                                            document.getElementById("tarifa_ulte_euro_1").value=k;
-                                                      document.getElementById("totali_kwh_1").value=i;
-                                                      document.getElementById("totali_euro").value=l;
-                                                      document.getElementById("tarifa_lart_kwh_2").value=m;
-                                                      document.getElementById("tarifa_lart_euro_2").value=o;
-                                                      document.getElementById("tarifa_ulte_kwh_2").value=n;
-                                                      document.getElementById("tarifa_ulte_euro_2").value=p;
-                                                      document.getElementById("totali_kwh_2").value=q;
-                                                      document.getElementById("totali_euro_2").value=s;
-                                                      document.getElementById("totali_gjithsej_lart_kwh").value=t_gjithsej_lart;
-                                                      document.getElementById("totali_gjithsej_ulte_kwh").value=t_gjithsej_ulte;
-                                                      document.getElementById("totali_gjithsej_kwh").value=gjithsej_kwh;
-                                                      document.getElementById("tarifa_fikse").value=t_fikse;
-                                                      document.getElementById("tarifa_energjise").value=t_energjis;
-                                                      document.getElementById("neto").value=neto;
-                                                      document.getElementById("tvsh").value=tvsh;
-                                                      document.getElementById("shuma_faktures").value=shuma_fakture;
-                                            
-                                            
-                                                  
-                                                      }
-                                                    }
-                                            
-                                            
-                                                    function myDel(){
-                                              document.getElementById("tarifa_lart_").value = "";
-                                              document.getElementById("tarifa_ulte_").value = "";
-                                            
-                                            }
-                                            
-                                            
-                                             
-                                                  </script>
-                                            
+                                
                                      
                                                                                        
                                           </form>
@@ -452,6 +303,8 @@
         <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
       </footer>
     </div>
+        <script src="script.js"></script>
+
   </body>
 </html>
 
