@@ -192,57 +192,7 @@
         
       
         </div>
-      <script>
-
-
-        function cigare(){
-            
-
-          let a, b, c, d, f;
-
-
-          a=parseFloat(document.getElementById("numri_cigareve").value);
-         
-          b=parseFloat(document.getElementById("madhesia_paketimit").value);
-          c=parseFloat(document.getElementById("qmimi_paketimit").value);
-        
  
-          if(!a || !b || !c  ){
-            document.getElementById('alertId').classList.remove('hide')
-                document.getElementById('alertId').innerHTML = "Ju duhet ti mbusheni te gjitha kolonat!";
-          }
-          else{
-            document.getElementById('alertId').classList.add('hide')
-
-            d = a / b * 365;
-
-            d=Math.round(d * 100) / 100
-
-            f = c * d;
-            f=Math.round(f * 100) / 100
- 
-
-         
-
-            document.getElementById("numri_paketimeve").value=d;
-          document.getElementById("shpenzimet").value=f;
-        
-          }
-        }
-
-
-        function myDel(){
-  document.getElementById("numri_cigareve").value = "";
-  document.getElementById("madhesia_paketimit").value = "";
-  document.getElementById("qmimi_paketimit").value = "";
- 
-
-
-}
-
-
- 
-      </script>
 
        
           
@@ -259,5 +209,7 @@
         <p class="text-center text-muted">&copy; 2022 Edmond Kastrati</p>
       </footer>
     </div>
+        <script src="script.js"></script>
+
   </body>
 </html>
