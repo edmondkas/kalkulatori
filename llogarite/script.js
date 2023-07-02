@@ -32,7 +32,7 @@ function blloka() {
 
     s = Math.round(s);
 
-   k = s * q /100;
+   k = s * q;
 
     // k = Math.round(k * 100) / 100;
 
