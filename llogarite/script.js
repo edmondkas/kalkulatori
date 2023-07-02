@@ -283,30 +283,11 @@ function rryma() {
 }
 
 function myDel() {
-  document.getElementById("tarifa_lart_").value = "";
-  document.getElementById("tarifa_ulte_").value = "";
+  var elements = document.getElementsByTagName("input");
 
-  document.getElementById("gjatesia_qeramikes").value = "";
-  document.getElementById("gjeresia_qeramikes").value = "";
-  document.getElementById("gjatesia_hapsires").value = "";
-  document.getElementById("gjeresia_hapsires").value = "";
-
-  document.getElementById("humbja").value = "";
-  document.getElementById("qmimi_qeramike").value = "";
-
-  document.getElementById("distanca").value = "";
-  document.getElementById("karburanti").value = "";
-  document.getElementById("cmimikarburantit").value = "";
-
-  document.getElementById("numri_cigareve").value = "";
-  document.getElementById("madhesia_paketimit").value = "";
-  document.getElementById("qmimi_paketimit").value = "";
-
-  document.getElementById("gjersia_bllokit").value = "";
-  document.getElementById("lartesia_bllokit").value = "";
-  document.getElementById("gjatesia_murit").value = "";
-  document.getElementById("lartesia_murit").value = "";
-
-  document.getElementById("humbja").value = "";
-  document.getElementById("qmimi_bllok").value = "";
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].type === "text") {
+      elements[i].value = "";
+    }
+  }
 }
