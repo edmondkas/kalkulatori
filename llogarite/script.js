@@ -291,3 +291,14 @@ function myDel() {
     }
   }
 }
+
+var data = new Date();
+
+// Merrni vitin aktual
+var viti = data.getFullYear();
+
+// Gjej elementin <p> me ID "viti-aktual"
+var pElement = document.getElementById("viti-aktual");
+
+// Vendos vitin aktual si tekst në elementin <p>
+pElement.textContent = "\u00A9 " + viti + " Edmond Kastrati";
